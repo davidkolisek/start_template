@@ -1,0 +1,31 @@
+/*!
+ * Bootstrap v4.0.0 (https://getbootstrap.com)
+ * Copyright 2011-2018 The Bootstrap Authors
+ * Copyright 2011-2018 Twitter, Inc.
+ * Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
+ */
+
+$path : "partials" !default;
+
+@import "partials/functions";
+@import "partials/variables";
+@import "partials/mixins";
+@import "partials/print";
+@import "partials/reboot";
+@import "partials/type";
+@import "partials/images";
+@import "partials/code";
+@import "partials/grid";
+@import "partials/forms";
+@import "partials/buttons";
+@import "partials/transitions";
+@import "partials/dropdown";
+@import "partials/input-group";
+@import "partials/custom-forms";
+@import "partials/nav";
+@import "partials/navbar";
+@import "partials/card";
+@import "partials/media";
+@import "partials/list-group";
+@import "partials/close";
+@import "partials/utilities";

@@ -1,0 +1,17 @@
+@import "../framework/bootstrap/bootstrap";
+@import "partials/variables";
+@import "partials/global";
+@import "partials/mixins";
+@import "partials/navbar";
+@import "partials/header";
+@import "partials/helper";
+@import "partials/footer";
+@import "partials/font-icons";
+@import "partials/animations";
+
+html, body {
+  height: 100%;
+  font-family: $primary-font;
+  color: $primary-color;
+}
+

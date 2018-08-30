@@ -1,0 +1,91 @@
+@charset "UTF-8";
+
+.animated {
+  -webkit-animation-duration: .8s;
+  animation-duration: .8s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    -webkit-transform: translate3d(0, -3%, 0);
+    transform: translate3d(0, -3%, 0);
+  }
+
+  to {
+    opacity: 1;
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+  }
+}
+@-webkit-keyframes fadeInUp {
+  from {
+    opacity: 0;
+    -webkit-transform: translate3d(0, -3%, 0);
+    transform: translate3d(0, -3%, 0);
+  }
+
+  to {
+    opacity: 1;
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+@-webkit-keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+.fadeIn {
+  -webkit-animation-name: fadeIn;
+  animation-name: fadeIn;
+}
+
+.fadeInUp {
+  animation-name: fadeInUp;
+  -webkit-animation-name: fadeInUp;
+}
+
+@media (max-width: 767px){
+  .animated{
+    animation: none;
+  }
+}
+
+.delay-400{
+  animation-delay: .4s;
+}
+
+.delay-800{
+  animation-delay: .8s;
+}
+
+.delay-1200{
+  animation-delay: 1.2s;
+}
+
+.delay-1600{
+  animation-delay: 1.6s;
+}
+
+.delay-2000{
+  animation-delay: 2s;
+}

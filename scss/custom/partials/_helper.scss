@@ -1,0 +1,29 @@
+a,button,input,textarea:focus {
+  outline:0!important;
+  box-shadow: none!important;
+}
+
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus,
+input:-webkit-autofill:active {
+  -webkit-transition: "color 9999s ease-out, background-color 9999s ease-out";
+  -webkit-transition-delay: 9999s;
+}
+
+p,h3{
+  position: relative;
+}
+
+.flex-center{
+  display: flex;
+  justify-content: center;
+}
+
+.flex-center-sm{
+  @include media-breakpoint-down(sm) {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+}
