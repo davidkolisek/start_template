@@ -1,0 +1,59 @@
+$primary-font: "Gill Sans", sans-serif;
+$primary-font-color: #272727;
+
+//font-sizes
+$fs-09: .9rem;
+$fs-1: 1rem;
+
+h1,h2,h3,h4,h5,h6,p,small,strong,ul,li {
+  position: relative;
+}
+
+//FYI
+//f.e.:.font-size-100-p class
+
+//$font-sizes-p: (100, 90, 80, 70, 60);
+//@each $font-size in $font-sizes-p {
+//  .font-size-#{$font-size}-p {
+//    font-size: #{$font-size}rem!important;
+//  }
+//}
+
+h1 {
+  font-size: 3rem;
+  @include media-breakpoint-down(lg) {
+    font-size: 2.75rem;
+  }
+  @include media-breakpoint-down(md) {
+    font-size: 2.5rem;
+  }
+  @include media-breakpoint-down(sm) {
+    font-size: 2.25rem;
+  }
+  @include media-breakpoint-down(xs) {
+    font-size: 2.2rem;
+  }
+}
+
+h2 {
+  font-size: 2.5rem;
+  @include media-breakpoint-down(lg) {
+    font-size: 2.25rem;
+  }
+  @include media-breakpoint-down(md) {
+    font-size: 2rem;
+  }
+  @include media-breakpoint-down(sm) {
+    font-size: 1.75rem;
+  }
+  @include media-breakpoint-down(xs) {
+    font-size: 1.5rem;
+  }
+}
+
+h3 {
+  font-size: 1.25rem;
+  @include media-breakpoint-down(md) {
+    font-size: 1.1rem;
+  }
+}

@@ -1,7 +1,9 @@
 @import "../framework/bootstrap/bootstrap";
 @import "partials/variables";
-@import "partials/global";
 @import "partials/mixins";
+@import "partials/font";
+@import "partials/button";
+@import "partials/global";
 @import "partials/navbar";
 @import "partials/header";
 @import "partials/helper";
@@ -12,6 +14,7 @@
 html, body {
   height: 100%;
   font-family: $primary-font;
-  color: $primary-color;
+  color: $primary-font-color;
+  font-size: $fs-09;
 }
 

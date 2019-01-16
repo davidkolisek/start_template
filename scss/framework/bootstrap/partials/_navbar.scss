@@ -116,11 +116,6 @@
   @include hover-focus {
     text-decoration: none;
   }
-
-  // Opinionated: add "hand" cursor to non-disabled .navbar-toggler elements
-  &:not(:disabled):not(.disabled) {
-    cursor: pointer;
-  }
 }
 
 // Keep as a separate element so folks can easily override it with another icon
@@ -175,7 +170,7 @@
         }
 
         .navbar-collapse {
-          display: flex !important;  // stylelint-disable-line declaration-no-important
+          display: flex !important; // stylelint-disable-line declaration-no-important
 
           // Changes flex-bases to auto because of an IE10 bug
           flex-basis: auto;
@@ -197,10 +192,10 @@
 // Dark links against a light background
 .navbar-light {
   .navbar-brand {
-    color: $navbar-light-active-color;
+    color: $navbar-light-brand-color;
 
     @include hover-focus {
-      color: $navbar-light-active-color;
+      color: $navbar-light-brand-hover-color;
     }
   }
 
@@ -249,10 +244,10 @@
 // White links against a dark background
 .navbar-dark {
   .navbar-brand {
-    color: $navbar-dark-active-color;
+    color: $navbar-dark-brand-color;
 
     @include hover-focus {
-      color: $navbar-dark-active-color;
+      color: $navbar-dark-brand-hover-color;
     }
   }
 

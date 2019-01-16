@@ -1,9 +1,10 @@
+//Use: https://icomoon.io/app/#/select
 $icomoon-font-path: "../fonts/icons" !default;
 
-$i-person: "\e908";
+$i-example: "\e908";
 
 @font-face {
-  font-family: 'dakol';
+  font-family: 'fontName';
   src:  url('#{$icomoon-font-path}/dakol.eot?giliyk');
   src:  url('#{$icomoon-font-path}/dakol.eot?giliyk#iefix') format('embedded-opentype'),
   url('#{$icomoon-font-path}/dakol.ttf?giliyk') format('truetype'),
@@ -15,7 +16,7 @@ $i-person: "\e908";
 
 i {
   /* use !important to prevent issues with browser extensions that change fonts */
-  font-family: '' !important;
+  font-family: 'fontName' !important;
   speak: none;
   font-style: normal;
   font-weight: normal;
@@ -27,8 +28,8 @@ i {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
-.i-person {
+.i-example {
   &:before {
-    content: $i-person;
+    content: $i-example;
   }
 }
