@@ -1,4 +1,4 @@
-a,button,input,textarea:focus {
+a,input,textarea:focus {
   outline:0!important;
   box-shadow: none!important;
 }
@@ -10,7 +10,6 @@ input:-webkit-autofill:active {
   -webkit-transition: "color 9999s ease-out, background-color 9999s ease-out";
   -webkit-transition-delay: 9999s;
 }
-
 
 .br-0{
   @include border-radius($zero-radius);
