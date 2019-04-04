@@ -40,12 +40,10 @@
   }
   &.btn-lg{
     padding: 1rem 1.5rem;
-    width: 200px;
     font-size: 1rem;
     @include media-breakpoint-down(lg){
       padding: .75rem 2rem;
-      width: auto;
-      max-width: 200px;
+      width: 100%;
     }
   }
 }

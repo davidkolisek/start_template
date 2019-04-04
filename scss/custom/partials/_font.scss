@@ -10,16 +10,16 @@ h1, h2, h3, h4, h5, h6, p, small, strong, ul, li {
 }
 
 //FYI
-//f.e.: .fs-12 /// fs-lg-12 /// 12 - 1.2rem
+//f.e.: .fs-12 /// fs-lg-12 ///    12 = 1.2rem
 $font-sizes-rem: (0, 1, 2, 3, 4, 5, 6, 7, 8, 9);
 $font-sizes-rem-2: (9, 8, 7, 6, 5, 4, 3, 2, 1, 0);
-$rem: 'rem' !important;
+$unit: 'rem' !important;
 $dot: '.';
 
 @each $size in $font-sizes-rem {
   @each $size-2 in $font-sizes-rem-2 {
     .fs-#{$size}#{$size-2} {
-      font-size: #{$size}#{$dot}#{$size-2}#{$rem};
+      font-size: #{$size}#{$dot}#{$size-2}#{$unit};
     }
   }
 }
@@ -28,7 +28,7 @@ $dot: '.';
   @each $size in $font-sizes-rem {
     @each $size-2 in $font-sizes-rem-2 {
       .fs-lg-#{$size}#{$size-2} {
-        font-size: #{$size}#{$dot}#{$size-2}#{$rem};
+        font-size: #{$size}#{$dot}#{$size-2}#{$unit};
       }
     }
   }
@@ -38,7 +38,7 @@ $dot: '.';
   @each $size in $font-sizes-rem {
     @each $size-2 in $font-sizes-rem-2 {
       .fs-md-#{$size}#{$size-2} {
-        font-size: #{$size}#{$dot}#{$size-2}#{$rem};
+        font-size: #{$size}#{$dot}#{$size-2}#{$unit};
       }
     }
   }
@@ -48,7 +48,7 @@ $dot: '.';
   @each $size in $font-sizes-rem {
     @each $size-2 in $font-sizes-rem-2 {
       .fs-sm-#{$size}#{$size-2} {
-        font-size: #{$size}#{$dot}#{$size-2}#{$rem};
+        font-size: #{$size}#{$dot}#{$size-2}#{$unit};
       }
     }
   }
@@ -58,47 +58,8 @@ $dot: '.';
   @each $size in $font-sizes-rem {
     @each $size-2 in $font-sizes-rem-2 {
       .fs-xs-#{$size}#{$size-2} {
-        font-size: #{$size}#{$dot}#{$size-2}#{$rem};
+        font-size: #{$size}#{$dot}#{$size-2}#{$unit};
       }
     }
-  }
-}
-
-h1 {
-  font-size: 3rem;
-  @include media-breakpoint-down(lg) {
-    font-size: 2.75rem;
-  }
-  @include media-breakpoint-down(md) {
-    font-size: 2.5rem;
-  }
-  @include media-breakpoint-down(sm) {
-    font-size: 2.25rem;
-  }
-  @include media-breakpoint-down(xs) {
-    font-size: 2.2rem;
-  }
-}
-
-h2 {
-  font-size: 2.5rem;
-  @include media-breakpoint-down(lg) {
-    font-size: 2.25rem;
-  }
-  @include media-breakpoint-down(md) {
-    font-size: 2rem;
-  }
-  @include media-breakpoint-down(sm) {
-    font-size: 1.75rem;
-  }
-  @include media-breakpoint-down(xs) {
-    font-size: 1.5rem;
-  }
-}
-
-h3 {
-  font-size: 1.25rem;
-  @include media-breakpoint-down(md) {
-    font-size: 1.1rem;
   }
 }

@@ -9094,42 +9094,6 @@ h1, h2, h3, h4, h5, h6, p, small, strong, ul, li {
 
   .fs-xs-90 {
     font-size: 9.0rem !important; } }
-h1 {
-  font-size: 3rem; }
-  @media (max-width: 1199.98px) {
-    h1 {
-      font-size: 2.75rem; } }
-  @media (max-width: 991.98px) {
-    h1 {
-      font-size: 2.5rem; } }
-  @media (max-width: 767.98px) {
-    h1 {
-      font-size: 2.25rem; } }
-  @media (max-width: 575.98px) {
-    h1 {
-      font-size: 2.2rem; } }
-
-h2 {
-  font-size: 2.5rem; }
-  @media (max-width: 1199.98px) {
-    h2 {
-      font-size: 2.25rem; } }
-  @media (max-width: 991.98px) {
-    h2 {
-      font-size: 2rem; } }
-  @media (max-width: 767.98px) {
-    h2 {
-      font-size: 1.75rem; } }
-  @media (max-width: 575.98px) {
-    h2 {
-      font-size: 1.5rem; } }
-
-h3 {
-  font-size: 1.25rem; }
-  @media (max-width: 991.98px) {
-    h3 {
-      font-size: 1.1rem; } }
-
 @media (max-width: 991.98px) {
   .main-btn {
     vertical-align: unset; } }
@@ -9177,13 +9141,11 @@ h3 {
   padding: .5rem 1rem; }
 .main-btn.btn-lg, .btn-group-lg > .main-btn.btn {
   padding: 1rem 1.5rem;
-  width: 200px;
   font-size: 1rem; }
   @media (max-width: 1199.98px) {
     .main-btn.btn-lg, .btn-group-lg > .main-btn.btn {
       padding: .75rem 2rem;
-      width: auto;
-      max-width: 200px; } }
+      width: 100%; } }
 
 a, input, textarea:focus {
   outline: 0 !important;
@@ -9229,24 +9191,6 @@ i {
   -webkit-animation-fill-mode: both;
   animation-fill-mode: both; }
 
-@keyframes fadeInUp {
-  from {
-    opacity: 0;
-    -webkit-transform: translate3d(0, -3%, 0);
-    transform: translate3d(0, -3%, 0); }
-  to {
-    opacity: 1;
-    -webkit-transform: translate3d(0, 0, 0);
-    transform: translate3d(0, 0, 0); } }
-@-webkit-keyframes fadeInUp {
-  from {
-    opacity: 0;
-    -webkit-transform: translate3d(0, -3%, 0);
-    transform: translate3d(0, -3%, 0); }
-  to {
-    opacity: 1;
-    -webkit-transform: translate3d(0, 0, 0);
-    transform: translate3d(0, 0, 0); } }
 @-webkit-keyframes fadeIn {
   from {
     opacity: 0; }
@@ -9261,27 +9205,11 @@ i {
   -webkit-animation-name: fadeIn;
   animation-name: fadeIn; }
 
-.fadeInUp {
-  animation-name: fadeInUp;
-  -webkit-animation-name: fadeInUp; }
-
 @media (max-width: 991.98px) {
   .animated {
     animation: none; } }
 .delay-400 {
   animation-delay: .4s; }
-
-.delay-800 {
-  animation-delay: .8s; }
-
-.delay-1200 {
-  animation-delay: 1.2s; }
-
-.delay-1600 {
-  animation-delay: 1.6s; }
-
-.delay-2000 {
-  animation-delay: 2s; }
 
 html, body {
   height: 100%;
