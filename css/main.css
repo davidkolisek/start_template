@@ -9121,59 +9121,6 @@ h1, h2, h3, h4, h5, h6, p, small, strong, ul, li {
 .fw-900 {
   font-weight: 900!important; }
 
-@media (max-width: 991.98px) {
-  .main-btn {
-    vertical-align: unset; } }
-.main-btn.primary {
-  background-color: #252525;
-  color: #fff; }
-  .main-btn.primary:hover {
-    background-color: #323232;
-    transition: all 0.15s ease-in-out; }
-    @media (prefers-reduced-motion: reduce) {
-      .main-btn.primary:hover {
-        transition: none; } }
-  .main-btn.primary:active {
-    background-color: #2b2b2b;
-    transition: all 0.15s ease-in-out; }
-    @media (prefers-reduced-motion: reduce) {
-      .main-btn.primary:active {
-        transition: none; } }
-.main-btn.secondary {
-  background-color: #eaeaea;
-  color: #fff; }
-  .main-btn.secondary:hover {
-    background-color: #dedede;
-    transition: all 0.15s ease-in-out; }
-    @media (prefers-reduced-motion: reduce) {
-      .main-btn.secondary:hover {
-        transition: none; } }
-  .main-btn.secondary:active {
-    background-color: #d1d1d1;
-    transition: all 0.15s ease-in-out; }
-    @media (prefers-reduced-motion: reduce) {
-      .main-btn.secondary:active {
-        transition: none; } }
-.main-btn.link {
-  background: transparent;
-  color: #252525; }
-  .main-btn.link:hover {
-    color: #3f3f3f;
-    text-decoration: none;
-    transition: all 0.15s ease-in-out; }
-    @media (prefers-reduced-motion: reduce) {
-      .main-btn.link:hover {
-        transition: none; } }
-.main-btn.btn-sm, .btn-group-sm > .main-btn.btn {
-  padding: .5rem 1rem; }
-.main-btn.btn-lg, .btn-group-lg > .main-btn.btn {
-  padding: 1rem 1.5rem;
-  font-size: 1rem; }
-  @media (max-width: 1199.98px) {
-    .main-btn.btn-lg, .btn-group-lg > .main-btn.btn {
-      padding: .75rem 2rem;
-      width: 100%; } }
-
 a, input, textarea:focus {
   outline: 0 !important;
   box-shadow: none !important; }
@@ -9237,6 +9184,59 @@ i {
     animation: none; } }
 .delay-400 {
   animation-delay: .4s; }
+
+@media (max-width: 991.98px) {
+  .main-btn {
+    vertical-align: unset; } }
+.main-btn.primary {
+  background-color: #252525;
+  color: #fff; }
+  .main-btn.primary:hover {
+    background-color: #323232;
+    transition: all 0.15s ease-in-out; }
+    @media (prefers-reduced-motion: reduce) {
+      .main-btn.primary:hover {
+        transition: none; } }
+  .main-btn.primary:active {
+    background-color: #2b2b2b;
+    transition: all 0.15s ease-in-out; }
+    @media (prefers-reduced-motion: reduce) {
+      .main-btn.primary:active {
+        transition: none; } }
+.main-btn.secondary {
+  background-color: #eaeaea;
+  color: #fff; }
+  .main-btn.secondary:hover {
+    background-color: #dedede;
+    transition: all 0.15s ease-in-out; }
+    @media (prefers-reduced-motion: reduce) {
+      .main-btn.secondary:hover {
+        transition: none; } }
+  .main-btn.secondary:active {
+    background-color: #d1d1d1;
+    transition: all 0.15s ease-in-out; }
+    @media (prefers-reduced-motion: reduce) {
+      .main-btn.secondary:active {
+        transition: none; } }
+.main-btn.link {
+  background: transparent;
+  color: #252525; }
+  .main-btn.link:hover {
+    color: #3f3f3f;
+    text-decoration: none;
+    transition: all 0.15s ease-in-out; }
+    @media (prefers-reduced-motion: reduce) {
+      .main-btn.link:hover {
+        transition: none; } }
+.main-btn.btn-sm, .btn-group-sm > .main-btn.btn {
+  padding: .5rem 1rem; }
+.main-btn.btn-lg, .btn-group-lg > .main-btn.btn {
+  padding: 1rem 1.5rem;
+  font-size: 1rem; }
+  @media (max-width: 1199.98px) {
+    .main-btn.btn-lg, .btn-group-lg > .main-btn.btn {
+      padding: .75rem 2rem;
+      width: 100%; } }
 
 html, body {
   height: 100%;
