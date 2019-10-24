@@ -1,0 +1,12 @@
+
+
+
+//if website is onepage use <a name="hrefId">
+//offset cause fixed navbar
+a[name] {
+  position: absolute;
+  top: -80px; //based on navigation height
+  @include media-breakpoint-down(md) {
+    top: -55px; //based on navigation height (breakpoint)
+  }
+}

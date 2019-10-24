@@ -14,3 +14,73 @@ input:-webkit-autofill:active {
 .br-0{
   @include border-radius($zero-radius);
 }
+
+.no-underline{
+  text-decoration: none;
+  &:hover,&:active,&:target,&:focus{
+    text-decoration: none;
+  }
+}
+
+.flex-center{
+  @include flex-center;
+}
+
+//bg overlay
+.bg-overlay{
+  &:after{
+    content: "";
+    background: rgba(47,53,66, .7);
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 0;
+  }
+  .index { //use this class on the parent container e.g. <div class="container">
+    z-index: 1;
+  }
+}
+
+//size-wrapper
+.size-wrapper{
+  &.xl-up{
+    width: 100%;
+    max-width: 1118px;
+  }
+  &.xl{
+    width: 100%;
+    max-width: 992px;
+  }
+  &.md{
+    width: 75%;
+    max-width: 802px;
+    @include media-breakpoint-down(md){
+      min-width: 133px;
+      width: 100%;
+    }
+  }
+  &.sm{
+    width: 50%;
+    max-width: 535px;
+    @include media-breakpoint-down(md){
+      min-width: 133px;
+      width: 100%;
+    }
+    @include media-breakpoint-down(xs){
+      min-width: 133px;
+      width: 100%;
+    }
+  }
+  &.xs{
+    width: 25%;
+    max-width: 267px;
+    @include media-breakpoint-down(md){
+      min-width: 133px;
+    }
+    @include media-breakpoint-down(sm){
+      width: 50%;
+    }
+  }
+}
