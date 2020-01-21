@@ -1,18 +1,24 @@
 /*!
- * Bootstrap v4.3.1 (https://getbootstrap.com/)
- * Copyright 2011-2019 The Bootstrap Authors
- * Copyright 2011-2019 Twitter, Inc.
+ * Bootstrap v4.4.1 (https://getbootstrap.com/)
+ * Copyright 2011-2020 The Bootstrap Authors
+ * Copyright 2011-2020 Twitter, Inc.
  * Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
  */
+
+// Configuration
 
 @import "partials/functions";
 @import "partials/variables";
 @import "partials/mixins";
+@import "partials/utilities";
+
+
+// Layout & components
+
 @import "partials/root";
 @import "partials/reboot";
 @import "partials/type";
 @import "partials/images";
-@import "partials/code";
 @import "partials/grid";
 @import "partials/tables";
 @import "partials/forms";
@@ -20,18 +26,14 @@
 @import "partials/transitions";
 @import "partials/dropdown";
 @import "partials/button-group";
-@import "partials/input-group";
-@import "partials/custom-forms";
 @import "partials/nav";
 @import "partials/navbar";
 @import "partials/card";
 @import "partials/breadcrumb";
 @import "partials/pagination";
 @import "partials/badge";
-@import "partials/jumbotron";
 @import "partials/alert";
 @import "partials/progress";
-@import "partials/media";
 @import "partials/list-group";
 @import "partials/close";
 @import "partials/toasts";
@@ -40,5 +42,13 @@
 @import "partials/popover";
 @import "partials/carousel";
 @import "partials/spinners";
-@import "partials/utilities";
-@import "partials/print";
+
+
+// Helpers
+
+@import "partials/helpers";
+
+
+// Utilities
+
+@import "partials/utilities/api";
