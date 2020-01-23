@@ -1,32 +1,20 @@
-@mixin smooth-transition($primary-transition) {
-  -webkit-transition: $primary-transition;
-  -moz-transition: $primary-transition;
-  -o-transition: $primary-transition;
-  transition: $primary-transition;
+@mixin smooth-transition($trans) {
+  -webkit-transition: $trans;
+  -moz-transition: $trans;
+  -o-transition: $trans;
+  transition: $trans;
 }
 
-@mixin box-shadows($primary-box-shadow) {
-  -webkit-box-shadow: $primary-box-shadow;
-  -moz-box-shadow: $primary-box-shadow;
-  box-shadow: $primary-box-shadow;
+@mixin box-shadows($box-sh) {
+  -webkit-box-shadow: $box-sh;
+  -moz-box-shadow: $box-sh;
+  box-shadow: $box-sh;
 }
 
-@mixin border-radius($primary-radius){
-  -webkit-border-radius: $primary-radius;
-  -moz-border-radius: $primary-radius;
-  border-radius: $primary-radius;
-}
-
-@mixin border-radius($circle-radius){
-  -webkit-border-radius: $circle-radius;
-  -moz-border-radius: $circle-radius;
-  border-radius: $circle-radius;
-}
-
-@mixin border-radius($zero-radius){
-  -webkit-border-radius: $zero-radius;
-  -moz-border-radius: $zero-radius;
-  border-radius: $zero-radius;
+@mixin border-radius($radius-number){
+  -webkit-border-radius: $radius-number;
+  -moz-border-radius: $radius-number;
+  border-radius: $radius-number;
 }
 
 @mixin flex-center{
