@@ -28,3 +28,9 @@
   -ms-flex-pack: center;
   justify-content: center;
 }
+
+@mixin flex-grow($grow-number){
+  -webkit-box-flex: $grow-number;
+  -ms-flex-positive: $grow-number;
+  flex-grow: $grow-number;
+}
