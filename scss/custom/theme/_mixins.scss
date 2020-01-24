@@ -17,6 +17,20 @@
   border-radius: $radius-number;
 }
 
+//flex
+@mixin d-flex{
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+@mixin flex-d-column{
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+}
+
 @mixin flex-center{
   display: -webkit-box;
   display: -ms-flexbox;
@@ -27,6 +41,12 @@
   -webkit-box-pack: center;
   -ms-flex-pack: center;
   justify-content: center;
+}
+
+@mixin justify-space-between{
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
 }
 
 @mixin flex-grow($grow-number){

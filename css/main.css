@@ -9133,9 +9133,15 @@ h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .h6, p, small, .small, strong, 
   font-weight: 900!important; }
 
 .layout {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
   flex-direction: column;
   -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
   justify-content: space-between;
   min-height: 100vh; }
 
@@ -9168,6 +9174,8 @@ h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .h6, p, small, .small, strong, 
     color: #c4c4c4; }
 
 .layout {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
@@ -9487,7 +9495,7 @@ input:-webkit-autofill:active {
 
 .no-underline {
   text-decoration: none; }
-  .no-underline:hover, .no-underline:active, .no-underline:target, .no-underline:focus {
+  .no-underline:hover, .no-underline:active, .no-underline:target, .no-underline:focus, .no-underline:visited {
     text-decoration: none; }
 
 .flex-center {
@@ -9591,6 +9599,7 @@ i {
 
 @media (max-width: 991.98px) {
   .animated {
+    -webkit-animation: none;
     animation: none; } }
 .delay-400 {
   animation-delay: .4s; }
@@ -9654,6 +9663,7 @@ i {
   .main-box .bg-img {
     width: 100%;
     height: 100%;
+    -o-object-fit: cover;
     object-fit: cover;
     position: absolute;
     top: 0;

@@ -1,5 +1,5 @@
 
-//scrool down add class in to body
+//scroll down add class in to body
 document.addEventListener('DOMContentLoaded', function () {
     let scrollPos = window.scrollY;
     let body = document.getElementById('body');
@@ -22,7 +22,7 @@ document.addEventListener('DOMContentLoaded', function () {
     });
 });
 
-//if page is onepage
+//if page is one-page
 //nav active class toggle
 document.addEventListener('click', function () {
     if (!event.target.classList.contains('nav-link')) return;
