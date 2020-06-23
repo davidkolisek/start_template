@@ -1,49 +1,55 @@
 .main-btn {
-  @include media-breakpoint-down(md){
-    vertical-align: unset;
-  }
   &.primary {
     background-color: $primary-color;
     color: $white_c;
-    &:hover{
+
+    &:hover {
       background-color: lighten($primary-color, 5%);
-      @include transition($primary-transition);
+      @include smooth-transition($primary-transition);
     }
-    &:active{
+
+    &:active {
       background-color: lighten($primary-color, 2.5%);
-      @include transition($primary-transition);
+      @include smooth-transition($primary-transition);
     }
   }
+
   &.secondary {
     background-color: lighten($secondary-color, 15%);
     color: $white_c;
-    &:hover{
+
+    &:hover {
       background-color: lighten($secondary-color, 10%);
-      @include transition($primary-transition);
+      @include smooth-transition($primary-transition);
     }
-    &:active{
+
+    &:active {
       background-color: lighten($secondary-color, 5%);
-      @include transition($primary-transition);
+      @include smooth-transition($primary-transition);
     }
   }
-  &.link{
+
+  &.link {
     background: transparent;
     color: $primary-color;
-    &:hover{
+
+    &:hover {
       color: lighten($primary-color, 10%);
       text-decoration: none;
-      @include transition($primary-transition);
+      @include smooth-transition($primary-transition);
     }
   }
-  &.btn-sm{
+
+  &.btn-sm {
     padding: .5rem 1rem;
   }
-  &.btn-lg{
-    padding: 1rem 1.5rem;
-    font-size: 1rem;
-    @include media-breakpoint-down(lg){
-      padding: .75rem 2rem;
-      width: 100%;
+
+  &.btn-lg {
+    padding: .75rem 2rem;
+    width: 100%;
+    @include media-breakpoint-up(lg) {
+      padding: 1rem 1.5rem;
+      font-size: 1rem;
     }
   }
 }

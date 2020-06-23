@@ -3,6 +3,12 @@
   animation-duration: .8s;
   -webkit-animation-fill-mode: both;
   animation-fill-mode: both;
+  @media (max-width: 991px) {
+    .animated {
+      -webkit-animation: none;
+      animation: none;
+    }
+  }
 }
 
 @-webkit-keyframes fadeIn {
@@ -30,12 +36,6 @@
   animation-name: fadeIn;
 }
 
-@include media-breakpoint-down(md) {
-  .animated {
-    -webkit-animation: none;
-    animation: none;
-  }
-}
 
 .delay-400 {
   animation-delay: .4s;
