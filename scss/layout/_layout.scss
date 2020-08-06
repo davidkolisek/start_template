@@ -1,9 +1,8 @@
-//layout
-.layout{
-  @include d-flex;
-  @include flex-d-column;
-  @include justify-space-between;
-  min-height: 100vh;
+html, body {
+  height: 100%;
+  font-family: $primary-font;
+  color: $primary-font-color;
+  font-size: 1rem;
 }
 
 .content{
@@ -38,5 +37,29 @@
   color: $secondary-color;
   &:hover{
     color: $secondary-color;
+  }
+}
+
+
+//layout
+.layout{
+  @include d-flex;
+  @include flex-d-column;
+  @include justify-space-between;
+  min-height: 100vh;
+  .nav-wrapper {
+    position: sticky;
+    top: 0;
+    z-index: 999;
+  }
+  .content-wrapper{
+    position: relative;
+    top: 0;
+    @include flex-grow(1);
+    z-index: 1;
+  }
+  .footer-wrapper{
+    position: relative;
+    top: 0;
   }
 }
