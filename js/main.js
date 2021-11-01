@@ -2,7 +2,7 @@
 //scroll down add class in to body
 document.addEventListener('DOMContentLoaded', function () {
     let scrollPos = window.scrollY;
-    let body = document.getElementById('body');
+    let body = document.querySelector('.ly-body');
 
     function add_class_on_scroll() {
         body.classList.add('scrolling');

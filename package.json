@@ -1,6 +1,6 @@
 {
-  "name": "start_template",
-  "version": "1.0.0",
+  "name": "start-template",
+  "version": "1.0.1",
   "description": "start html/bootstrap template",
   "repository": {
     "type": "git",
@@ -12,6 +12,5 @@
   },
   "homepage": "https://github.com/davidkolisek/start_template#readme",
   "dependencies": {
-    "bootstrap": "^5.0.0-alpha1"
   }
 }
