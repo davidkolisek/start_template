@@ -1,3 +1,5 @@
+//year
+document.getElementById("year").innerHTML = (new Date).getFullYear();
 
 //scroll down add class in to body
 document.addEventListener('DOMContentLoaded', function () {

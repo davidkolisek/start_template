@@ -1,53 +1,94 @@
 @charset "UTF-8";
 
 .main-btn {
+  text-decoration: none;
+  &:focus {
+    outline: 0 !important;
+    box-shadow: none;
+  }
   &-primary {
-    background-color: $primary-color;
-    color: $white_c;
+    background-color: $c-primary-500;
+    color: $c-white;
 
     &:hover {
-      background-color: lighten($primary-color, 5%);
+      background-color: $c-primary-400;
       @include smooth-transition($primary-transition);
     }
 
     &:active {
-      background-color: lighten($primary-color, 2.5%);
+      background-color: $c-primary-600;
       @include smooth-transition($primary-transition);
     }
   }
 
   &-secondary {
-    background-color: lighten($secondary-color, 15%);
-    color: $white_c;
+    background-color: $c-secondary-500;
+    color: $c-white;
 
     &:hover {
-      background-color: lighten($secondary-color, 10%);
+      background-color: $c-secondary-400;
       @include smooth-transition($primary-transition);
     }
 
     &:active {
-      background-color: lighten($secondary-color, 5%);
+      background-color: $c-secondary-600;
       @include smooth-transition($primary-transition);
+    }
+  }
+
+  &-ghost {
+    &-primary {
+      background: transparent;
+      border: 1px solid $c-primary-500;
+      color: $c-white;
+
+      &:hover {
+        background-color: $c-primary-400;
+        border-color: $c-primary-400;
+        @include smooth-transition($primary-transition);
+      }
+
+      &:active {
+        background-color: $c-primary-600;
+        border-color: $c-primary-600;
+        @include smooth-transition($primary-transition);
+      }
+    }
+    &-secondary {
+      background: transparent;
+      border: 1px solid $c-primary-500;
+      color: $c-white;
+
+      &:hover {
+        background-color: $c-secondary-400;
+        border-color: $c-secondary-400;
+        @include smooth-transition($primary-transition);
+      }
+
+      &:active {
+        background-color: $c-secondary-600;
+        border-color: $c-primary-600;
+        @include smooth-transition($primary-transition);
+      }
     }
   }
 
   &-link {
     &-primary {
       background: transparent;
-      color: $primary-color;
-
+      color: $c-primary-500;
       &:hover {
-        color: lighten($primary-color, 10%);
+        color: $c-primary-400;
         text-decoration: none;
         @include smooth-transition($primary-transition);
       }
     }
     &-secondary {
       background: transparent;
-      color: $secondary-color;
+      color: $c-secondary-500;
 
       &:hover {
-        color: lighten($primary-color, 10%);
+        color: $c-secondary-400;
         text-decoration: none;
         @include smooth-transition($primary-transition);
       }
@@ -56,17 +97,13 @@
   &.btn-size {
     width: 100%;
     &-sm {
-      padding: 0.25rem 1rem;
+      padding: 0.5rem 1rem;
     }
     &-md {
-      padding: 0.5rem 1.25rem;
+      padding: 1rem 1.5rem;
     }
     &-lg {
-      padding: 1rem 1.5rem;
-      @media (max-width: $bp-tablet) {
-        padding: 0.75rem 2rem;
-        font-size: 1rem;
-      }
+      padding: 1.25rem 2.5rem;
     }
   }
 }
