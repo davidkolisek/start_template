@@ -5,3 +5,37 @@
 @import '5-modules/index';
 @import '6-pages/index';
 @import '7-themes/index';
+
+
+.items {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+    &__inner {
+      position: relative;
+      width: 100%;
+      max-width: 800px;
+      height: 800px;
+      background: #fff;
+    }
+    &__layer &__item {
+      position: absolute;
+    }
+    &__layer:nth-child(1) &__item {
+      $color: #2E385C;
+      top: 200px;
+      left: 120px;
+      width: 340px;
+      height: 340px;
+      background: $color;
+      &:after {
+        top: -23px;
+        left: 0;
+        color: $color;
+      }
+    }
+  }
+  

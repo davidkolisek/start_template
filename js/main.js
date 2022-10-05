@@ -1,47 +1,66 @@
-//year
-document.getElementById("year").innerHTML = (new Date).getFullYear();
 
-//scroll down add class in to body
-document.addEventListener('DOMContentLoaded', function () {
-    let scrollPos = window.scrollY;
-    let body = document.querySelector('.ly-body');
 
-    function add_class_on_scroll() {
-        body.classList.add('scrolling');
-    }
+document.addEventListener("DOMContentLoaded", function () {
 
-    function remove_class_on_scroll() {
-        body.classList.remove('scrolling');
-    }
+    let sections = [
+        {
+          sectionClass: ".sec1",
+          w: 50 + "px",
+          h: 50 + "px",
+          posTop: 50,
+          posLeft: 50,
+          posBottom: "unset",
+          posRight: "unset",
+          imgWrapperId: this.sectionClass + "-float-img-wrapper",
+          imageUrl: "/images/circle.png",
+        },
+        // {
+        //   sectionClass: ".sec1",
+        //   w: 50 + "px",
+        //   h: 50 + "px",
+        //   posTop: 150,
+        //   posLeft: 150,
+        //   posBottom: "unset",
+        //   posRight: "unset",
+        //   imgWrapper: this.sectionClass + "-float-img-wrapper",
+        //   imageUrl: "/images/man.png",
+        // },
+        // {
+        //   sectionClass: ".sec2",
+        //   w: 50 + "px",
+        //   h: 50 + "px",
+        //   posTop: 50,
+        //   posLeft: 50,
+        //   posBottom: "unset",
+        //   posRight: "unset",
+        //   imgWrapper: "." + this.sectionClass + "-float-img-wrapper",
+        //   imageUrl: "/images/triangle.png",
+        // },
+      ];
+      
+      sections.forEach(function (section, index) {
+        console.log(section);
+        let html = `<div id="${section.imgWrapperId}">
+        <div data-depth="0.85" style="background-image:url(${section.imageUrl});width:${section.w};height:${section.h};background-size:contain;background-repeat:no-repeat;">
+        
+             </div>
+        </div>`;
 
-    window.addEventListener('scroll', function () {
-        scrollPos = window.scrollY;
-        if (scrollPos > 15) {
-            add_class_on_scroll();
-        } else {
-            remove_class_on_scroll();
+        document.querySelector(section.sectionClass).innerHTML += html;
+
+      });
+
+      setTimeout(() => {
+        if (document.body.contains(document.getElementById('undefined-float-img-wrapper'))) {
+            var scene1 = document.getElementById('undefined-float-img-wrapper');
+          let parallax = new Parallax(scene1);
         }
-    });
+        //   console.log(document.querySelector(section.imgWrapper));
+        }, 1000)
+
 });
 
-//if page is one-page
-//nav active class toggle
-document.addEventListener('click', function () {
-    if (!event.target.classList.contains('nav-link')) return;
-    event.target.classList.add('active');
-    let links = document.querySelectorAll('.nav-link');
-    for (let i = 0; i < links.length; i++) {
-        if (links[i] === event.target) continue;
-        links[i].classList.remove('active');
-    }
-}, false);
 
-//remove show class on phone breakpoint
-const anchorScrools = document.querySelectorAll('.nav-link');
-const collapse = document.querySelector('.navbar-collapse');
-Array.from(anchorScrools).map((anchorScrool) => {
-    anchorScrool.addEventListener('click', function () {
-        collapse.classList.remove('show');
-    });
-});
-
+{/* <img src="${section.imageUrl}"
+             alt="${section.imageUrl}"
+             style="width:${section.w};height:${section.h}" /> */}
