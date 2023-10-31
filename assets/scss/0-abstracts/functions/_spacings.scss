@@ -1,0 +1,5 @@
+@use '../variables/spacings' as *;
+
+@function spacing($number) {
+    @return #{$number * $spacing-base}px;
+}

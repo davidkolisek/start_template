@@ -1,0 +1,23 @@
+@use '../variables/index' as *;
+
+//@include font-face('Asap', 'Asap-Regular', 'sans-serif');
+@mixin font-face($style-name, $file-name, $category: '') {
+    @font-face {
+        font-family: '#{$style-name}';
+        src: url($path-fonts + $file-name + '.eot');
+        src: url($path-fonts + $file-name + '.eot?#iefix') format('embedded-opentype'), url($path-fonts + $file-name + '.woff')
+        format('woff'), url($path-fonts + $file-name + '.ttf') format('truetype'), url($path-fonts + $file-name + '.svg#' + $style-name + '')
+        format('svg');
+    }
+
+    %#{$style-name} {
+        font: {
+            @if $category != '' {
+                family: '#{$style-name}', #{$category};
+            } @else {
+                family: '#{$style-name}';
+                weight: normal;
+            }
+        }
+    }
+}

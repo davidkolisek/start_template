@@ -1,0 +1,19 @@
+@use '../0-abstracts/index' as *;
+
+table {
+    thead {
+        tr {
+            th {}
+        }
+    }
+    tbody {
+        tr {
+            td {}
+        }
+    }
+    tfoot {
+        tr {
+            td {}
+        }
+    }
+}

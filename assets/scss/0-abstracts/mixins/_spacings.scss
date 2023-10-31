@@ -1,0 +1,36 @@
+@use '../functions/index' as *;
+
+// Example usage:
+//.element {
+//  @include margin(2, 1); // Creates margin-top: 8px and margin-right: 4px
+//  @include padding(3);    // Creates padding: 12px;
+//  @include padding(3, 2); // Creates padding: 12px 8px;
+//  @include padding(3, 2, 1); // Creates padding: 12px 8px 4px;
+//  @include padding(3, 2, 1, 0); // Creates padding: 12px 8px 4px 0;
+//  @include margin(2);     // Creates margin: 8px;
+//  @include margin(2, 1, 3); // Creates margin: 8px 4px 12px;
+//}
+
+@mixin margin($top, $right: null, $bottom: null, $left: null) {
+  @if $right == null {
+    margin: spacing($top);
+  } @else if $bottom == null {
+    margin: spacing($top) spacing($right);
+  } @else if $left == null {
+    margin: spacing($top) spacing($right) spacing($bottom);
+  } @else {
+    margin: spacing($top) spacing($right) spacing($bottom) spacing($left);
+  }
+}
+
+@mixin padding($top, $right: null, $bottom: null, $left: null) {
+  @if $right == null {
+    padding: spacing($top);
+  } @else if $bottom == null {
+    padding: spacing($top) spacing($right);
+  } @else if $left == null {
+    padding: spacing($top) spacing($right) spacing($bottom);
+  } @else {
+    padding: spacing($top) spacing($right) spacing($bottom) spacing($left);
+  }
+}

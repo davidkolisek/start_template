@@ -1,0 +1,79 @@
+@use '../variables/index' as *;
+
+@mixin button-base {
+    transition: $trans-primary;
+    border-radius: $br-small;
+    text-decoration: none;
+    cursor: pointer;
+    user-select: none;
+    vertical-align: middle;
+    display: inline-block;
+}
+
+// Set button color
+@mixin button-color($color, $outline: false) {
+    background: $color;
+    @if $outline {
+        border: 1px solid $color;
+        background: transparent;
+    }
+}
+
+// Set button size
+@mixin button-size($sm: false, $md: false, $lg: false) {
+    position: relative;
+    @if $sm {
+        height: 40px;
+        line-height: 40px;
+        font-size: 0.9rem;
+        padding: 0 20px;
+        //pripravene BP
+        @media(max-width: $bp-desktop) {}
+        @media(max-width: $bp-laptop) {}
+        @media(max-width: $bp-tablet) {}
+        @media(max-width: $bp-mobile) {}
+        @media(max-width: $bp-mobile-old) {}
+    } @else if $md {
+        height: 50px;
+        line-height: 50px;
+        font-size: 1rem;
+        padding: 0 25px;
+        //pripravene BP
+        @media(max-width: $bp-desktop) {}
+        @media(max-width: $bp-laptop) {}
+        @media(max-width: $bp-tablet) {}
+        @media(max-width: $bp-mobile) {}
+        @media(max-width: $bp-mobile-old) {}
+    } @else if $lg {
+        height: 60px;
+        line-height: 60px;
+        font-size: 1.2rem;
+        padding: 0 30px;
+        //pripravene BP
+        @media(max-width: $bp-desktop) {}
+        @media(max-width: $bp-laptop) {}
+        @media(max-width: $bp-tablet) {}
+        @media(max-width: $bp-mobile) {}
+        @media(max-width: $bp-mobile-old) {}
+    } @else {
+        @error "A button size was not specified.";
+    }
+}
+// Set button icon
+@mixin button-icon($right: false, $left: false, $standalone: false, $icon-code) {
+    @if $right {
+        &:after{
+            content: '#{$icon-code}';
+        }
+    } @else if $left {
+        &:before{
+            content: '#{$icon-code}';
+        }
+    } @else if $standalone {
+        &:before{
+            content: '#{$icon-code}';
+        }
+    } @else {
+        @error "Button icon was not specified.";
+    }
+}
