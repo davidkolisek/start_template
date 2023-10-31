@@ -1,11 +1,3 @@
-// Import our custom CSS
-import '../scss/main.scss'
-// Import all of Bootstrap's JS
-import * as bootstrap from 'bootstrap'
-
-const collapseElementList = document.querySelectorAll('.collapse')
-const collapseList = [...collapseElementList].map(collapseEl => new bootstrap.Collapse(collapseEl))
-
 //year
 document.getElementById("year").innerHTML = (new Date).getFullYear();
 
